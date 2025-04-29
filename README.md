@@ -3,19 +3,19 @@ Build an automated test suite that validates the functionality of both a real we
 
 ## Setup
 
-1. Clone the repo
+# 1. Clone the repo: 
 git clone https://github.com/umerfarooq43/playwright-e2e-ui-api-test-suite.git
 
-2. Change directory 
+# 2. Change directory:  
 cd playwright-e2e-ui-api-test-suite
 
-3. Install dependencies
+# 3. Install dependencies: 
 npm install
 
-4. Install Playwright browsers:
+# 4. Install Playwright browsers:
 npx playwright install
 
-4. Run tests
+# 5. Run tests
 # UI Tests
 npx playwright test tests/ui
 
@@ -29,7 +29,7 @@ npx playwright test
 npx playwright test --headed
 
 
-5. View reports
+# View reports
 npx playwright show-report
 
 # The Internet Test Automation Suite
