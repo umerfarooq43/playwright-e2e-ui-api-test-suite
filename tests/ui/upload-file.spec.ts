@@ -11,6 +11,30 @@ test.describe('File Upload Page Tests', () => {
         await uploadPage.navigate(urls.uploadPageUrl)
     })
 
+    test('Verify that File Uploader page is rendered successfully', async ({ page }) => {
+        await uploadPage.assertFileUploaderPage();
+    })
+
+    test('Verify that choose file selection is enabled', async ({ page }) => {
+        await expect(page.locator('#file-upload')).toBeEnabled()
+    })
+
+    test('Verify that upload button is enabled', async ({ page }) => {
+        await expect(page.locator('#file-submit')).toBeEnabled()
+    })
+
+    test('Verify that drag and drop area is enabled', async ({ page }) => {
+        await expect(page.locator('#drag-drop-upload')).toBeEnabled()
+    })
+
+    test('Verify that error message displays when no file selected and upload button clicked', async ({ page }) => {
+        page.on('response', async (response) => {
+            status = response.status();
+        })
+        await uploadPage.clickOnUploadButton();
+        await uploadPage.assertFileUpload('fileName', status) 
+    })
+
     Object.values(testData.files).forEach((filePath) => {
         test(`Verify that users can upload a file: ${filePath}`, async ({ page }) => {
             page.on('response', async (response) => {

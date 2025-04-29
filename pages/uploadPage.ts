@@ -24,6 +24,13 @@ export class UploadPage {
     }
   }
 
+  async assertFileUploaderPage () {
+    await Promise.all([
+      expect(this.page.locator('h3')).toHaveText('File Uploader'),
+      expect(this.page.getByText('Choose a file on your system and then click upload. Or, drag and drop a file into the area below.')).toBeVisible(),
+      expect(this.page.getByText('Powered by Elemental Selenium')).toBeVisible()
+    ])
+  }
 
   async uploadFile(filePath: string) {
     try {
