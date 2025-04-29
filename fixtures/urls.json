@@ -1,0 +1,4 @@
+{
+    "uploadPageUrl": "https://the-internet.herokuapp.com/upload",
+    "apiBaseUrl": "https://jsonplaceholder.typicode.com"
+}

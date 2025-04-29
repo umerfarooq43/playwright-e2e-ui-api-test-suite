@@ -1,0 +1,32 @@
+{
+    "files": {
+        "BMP": "resources/bmp-example-file-download-500x500.bmp",
+        "GIF": "resources/SampleGIFImage_40kbmb.gif",
+        "CSV": "resources/SampleCSVFile_2kb.csv",
+        "DOC": "resources/SampleDOCFile_100kb.doc",
+        "JPG": "resources/SampleJPGImage_50kbmb.jpg",
+        "PDF": "resources/SamplePDFFile_5mb.pdf",
+        "PNG": "resources/SamplePNGImage_100kbmb.png",
+        "PPT": "resources/SamplePPTFile_500kb.ppt",
+        "TXT": "resources/SampleTextFile_10kb.txt",
+        "3GP": "resources/SampleVideo_176x144_1mb.3gp",
+        "FLV": "resources/SampleVideo_1280x720_1mb.flv",
+        "MKV": "resources/SampleVideo_1280x720_1mb.mkv",
+        "MP4": "resources/SampleVideo_1280x720_1mb.mp4",
+        "TIFF": "resources/tiff-example-file-download-500x500.tiff",
+        "DXF": "resources/SampleDXFFile_50kbmb.dxf",
+        "PSD": "resources/SamplePSDFile_1.9mbmb.psd",
+        "ZIP": "resources/SampleZIPFile_10mbmb.zip",
+        "SQL": "resources/Sample-SQL-File-10-Rows.sql",
+        "XLS": "resources/SampleXLSFile_19kb.xls"
+    },
+    "newPost": {
+        "title": "foo",
+        "body": "bar",
+        "userId": 1
+    },
+    "updatedPost": {
+        "title": "updated title",
+        "body": "updated body"
+    }
+}

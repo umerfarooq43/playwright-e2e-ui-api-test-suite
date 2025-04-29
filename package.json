@@ -1,0 +1,14 @@
+{
+  "name": "playwright-e2e-ui-api-test-suite",
+  "version": "1.0.0",
+  "description": "Build an automated test suite that validates the functionality of both a real website and a public API with Playwright.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.3"
+  }
+}
